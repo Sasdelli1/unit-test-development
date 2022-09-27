@@ -12,6 +12,29 @@ namespace Sample.Test
             _sampleService = new SampleService();
         }
 
+        [Fact]
+        public void Sum_MultipleValues_ReturnSuccess()
+        {
+            //arrange
+            var value1 = 2;
+            var value2 = 4;
+            var value3 = 6;
+            var value4 = 8;
+            var value5 = 12;
+            var total = 2;
+            var withTotal = 34;
+            var withoutTotal = 32;
+
+            //act
+            var resultWithTotal = _sampleService.Sum(total, value1, value2, value3, value4, value5);
+            var resultWithoutTotal = _sampleService.Sum(value1, value2, value3, value4, value5);
+
+            //Assert
+            Assert.Equal(withTotal, resultWithTotal);
+            Assert.Equal(withoutTotal, resultWithoutTotal);
+        }
+
+
         [Theory]
         [InlineData(-5)]
         [InlineData(-3)]
