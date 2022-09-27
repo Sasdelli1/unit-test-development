@@ -26,7 +26,7 @@ namespace Sample
         {
             var result = total;
 
-            foreach (var item in values)
+            foreach (var item in values) 
             {
                 result += item;
             }
