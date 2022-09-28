@@ -47,6 +47,7 @@ namespace Sample.Test
 
             //Assert
             Assert.Equal(values, resultWithoutTotal);
+            Assert.Equal(values, resultWithoutTotal);
         }
 
 
