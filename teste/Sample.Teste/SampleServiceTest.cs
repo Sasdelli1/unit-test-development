@@ -42,7 +42,7 @@ namespace Sample.Test
 
 
             //act
-            var resultWithoutTotal = _sampleService.Sum(values, values, values);
+            var resultWithoutTotal = _sampleService.Sum(values, values, values,values);
             
 
             //Assert
